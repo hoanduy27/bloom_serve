@@ -17,8 +17,12 @@ if __name__ == "__main__":
     channel = grpc.insecure_channel(CHANNEL_IP)
     stub = bloom_service_pb2_grpc.BloomServiceStub(channel)
 
-    for _ in range(3):
-        text = input("Enter a text: ")
+    while True:
+        text = input("What do ya wanna ask? ('!q' to quit) >> ")
+
+        if text == "!q":
+            break
+
         request = InputMessage(prompt=text)
 
         responses = stub.Chat(request)
