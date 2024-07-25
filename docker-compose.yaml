@@ -1,6 +1,8 @@
 services:
   app:
     build: ./
+    # or
+    # image: hoanduy27/bloomz-service:latest
     volumes:
       - ./:/src
     env_file:
