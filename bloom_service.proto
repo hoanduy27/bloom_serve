@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package flowbot;
+package bloom_service;
 
 service BloomService {
     rpc Chat(InputMessage) returns (stream OutputMessage) {}
