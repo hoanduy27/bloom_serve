@@ -37,13 +37,12 @@ RUN   pip3 install -r /requirements.txt && \
 
 COPY  . /src
 
-EXPOSE 50001
+COPY .env.development /src/.env
+
+EXPOSE 5000
 
 WORKDIR /src
 
-RUN chmod +x /src/genproto.sh
-RUN chmod +x /src/run.sh
+# RUN chmod +x /src/run.sh
 
-RUN /src/genproto.sh
-
-ENTRYPOINT 	["/src/run.sh"]
+ENTRYPOINT 	["python", "server.py"]

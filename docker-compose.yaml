@@ -1,0 +1,16 @@
+services:
+  app:
+    build: ./
+    volumes:
+      - ./:/src
+    env_file:
+      - .env.development
+    ports:
+      - 5000:5000
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
