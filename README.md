@@ -1,5 +1,10 @@
 # bloom serve
 
+<div>
+    <a href="https://huggingface.co/hoanduy27/bloomz-1b1-quantization-nf4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-grey"></a>
+    <a href="https://hub.docker.com/repository/docker/hoanduy27/bloomz-service/general"><img src="https://img.shields.io/badge/Docker-blue"></a>
+</div>
+
 Serving BloomZ. Supports:
 
 - Streaming LLM
@@ -9,9 +14,6 @@ Serving BloomZ. Supports:
 - Token probability logging
 
 - Benchmarking throughput and latency at different CCUs.
-
-Model uses: [BloomZ-1b1 (quantized)](https://huggingface.co/hoanduy27)
-Prebuild: [Docker image](https://hub.docker.com/repository/docker/hoanduy27/bloomz-service/general)
 
 # Quick start (hope so)
 
