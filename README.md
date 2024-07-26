@@ -10,6 +10,8 @@ Serving BloomZ. Supports:
 
 - Benchmarking throughput and latency at different CCUs.
 
+Model uses: [BloomZ-1b1 (quantized)](https://huggingface.co/hoanduy27)
+Prebuild: [Docker image](https://hub.docker.com/repository/docker/hoanduy27/bloomz-service/general)
 
 # Quick start (hope so)
 
